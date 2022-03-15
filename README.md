@@ -13,11 +13,11 @@ The API runs on a flask server.
 * **Requests** - To get the HTML of the web page and convert it into string.
 
 ## Functions:
-**main()**
+**main() -**
 <pre>   This function returns the main/ home page of the application showing the different routes available. </pre>
 
-**get_time_stories() - **
+**get_time_stories() -**
 <pre>   This function returns the json data containing the title and the link to the story on the webpage. </pre>
 
-**extract_data() - **
+**extract_data() -**
 <pre>   This function parses the HTML of the Times.com and looks for the most-popular-feed line by line and returns the data in a JSON format. </pre>
