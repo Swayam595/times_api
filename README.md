@@ -5,7 +5,7 @@ The API runs on a flask server.
 <pre> python app.py</pre>
 
 ## The app will run on:
-<pre>  [Home](http://localhost:8008/)</pre>
+<pre>  http://localhost:8008/</pre>
 
 ## Required Libraries:
 * **Flask** - This library is essential to create REST API in python. The library creates the REST API that returns the latest 5 stories on Times.com.
