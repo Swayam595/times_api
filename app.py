@@ -15,11 +15,11 @@ def extract_data():
     completed = False
     for i in range(len(data)):
         line = data[i].strip()
-        if line == '<div class="most-popular-feed-wrapper">':
+        if line == '<h2 class="latest-stories__heading">Latest Stories</h2>':
             curr_line = data[i].strip()
-            while curr_line != '</div>':
-                if '<h3 class="most-popular-feed__item-headline">' in curr_line:
-                    curr_title = re.search(r'<h3 class="most-popular-feed__item-headline">(.*?)</', curr_line).group(1)
+            while curr_line != '</ul>':
+                if '<h3 class="latest-stories__item-headline">' in curr_line:
+                    curr_title = re.search(r'<h3 class="latest-stories__item-headline">(.*?)</h3>', curr_line).group(1)
                     titles.append(curr_title)
                 elif '<a href=' in curr_line:
                     curr_title_link = re.search(r'href=\"(.*?)\"', curr_line).group(1)
